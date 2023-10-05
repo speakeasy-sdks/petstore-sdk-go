@@ -47,3 +47,13 @@ Based on:
 - [go v1.2.2] .
 ### Releases
 - [Go v1.2.2] https://github.com/speakeasy-sdks/petstore-sdk-go/releases/tag/v1.2.2 - .
+
+## 2023-10-05 00:36:39
+### Changes
+Based on:
+- OpenAPI Doc 1.0.0 
+- Speakeasy CLI 1.94.0 (2.147.0) https://github.com/speakeasy-api/speakeasy
+### Generated
+- [go v1.3.0] .
+### Releases
+- [Go v1.3.0] https://github.com/speakeasy-sdks/petstore-sdk-go/releases/tag/v1.3.0 - .
