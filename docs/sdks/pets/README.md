@@ -1,5 +1,5 @@
 # Pets
-(*Pets*)
+(*.Pets*)
 
 ### Available Operations
 
@@ -19,7 +19,7 @@ package main
 import(
 	"context"
 	"log"
-	"petstore"
+	petstore "petstore/v2"
 )
 
 func main() {
@@ -61,8 +61,8 @@ package main
 import(
 	"context"
 	"log"
-	"petstore"
-	"petstore/pkg/models/operations"
+	petstore "petstore/v2"
+	"petstore/v2/pkg/models/operations"
 )
 
 func main() {
@@ -105,8 +105,8 @@ package main
 import(
 	"context"
 	"log"
-	"petstore"
-	"petstore/pkg/models/operations"
+	petstore "petstore/v2"
+	"petstore/v2/pkg/models/operations"
 )
 
 func main() {

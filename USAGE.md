@@ -7,7 +7,7 @@ package main
 import (
 	"context"
 	"log"
-	"petstore"
+	petstore "petstore/v2"
 )
 
 func main() {
