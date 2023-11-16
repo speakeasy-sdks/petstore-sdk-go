@@ -1,12 +1,11 @@
 <!-- Start SDK Example Usage -->
-
-
 ```go
 package main
 
 import (
 	"context"
 	"log"
+	"net/http"
 	petstore "petstore/v2"
 )
 

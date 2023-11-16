@@ -10,12 +10,15 @@ go get github.com/speakeasy-sdks/petstore-sdk-go
 
 ## SDK Example Usage
 <!-- Start SDK Example Usage -->
+### Example
+
 ```go
 package main
 
 import (
 	"context"
 	"log"
+	"net/http"
 	petstore "petstore/v2"
 )
 
@@ -74,7 +77,7 @@ Here's an example of one such pagination call:
 
 
 <!-- Start Error Handling -->
-# Error Handling
+## Error Handling
 
 Handling errors in this SDK should largely match your expectations.  All operations return a response object or an error, they will never return both.  When specified by the OpenAPI spec document, the SDK will return the appropriate subclass.
 
@@ -82,16 +85,17 @@ Handling errors in this SDK should largely match your expectations.  All operati
 | ------------------ | ------------------ | ------------------ |
 | sdkerrors.SDKError | 400-600            | */*                |
 
-
-## Example
+### Example
 
 ```go
 package main
 
 import (
 	"context"
+	"errors"
 	"log"
 	petstore "petstore/v2"
+	"petstore/v2/pkg/models/sdkerrors"
 )
 
 func main() {
@@ -115,9 +119,9 @@ func main() {
 
 
 <!-- Start Server Selection -->
-# Server Selection
+## Server Selection
 
-## Select Server by Index
+### Select Server by Index
 
 You can override the default server globally using the `WithServerIndex` option when initializing the SDK client instance. The selected server will then be used as the default on the operations that use it. This table lists the indexes associated with the available servers:
 
@@ -125,7 +129,7 @@ You can override the default server globally using the `WithServerIndex` option 
 | - | ------ | --------- |
 | 0 | `http://petstore.swagger.io/v1` | None |
 
-For example:
+#### Example
 
 ```go
 package main
@@ -133,6 +137,7 @@ package main
 import (
 	"context"
 	"log"
+	"net/http"
 	petstore "petstore/v2"
 )
 
@@ -155,16 +160,16 @@ func main() {
 ```
 
 
-## Override Server URL Per-Client
+### Override Server URL Per-Client
 
 The default server can also be overridden globally using the `WithServerURL` option when initializing the SDK client instance. For example:
-
 ```go
 package main
 
 import (
 	"context"
 	"log"
+	"net/http"
 	petstore "petstore/v2"
 )
 
@@ -190,7 +195,7 @@ func main() {
 
 
 <!-- Start Custom HTTP Client -->
-# Custom HTTP Client
+## Custom HTTP Client
 
 The Go SDK makes API calls that wrap an internal HTTP client. The requirements for the HTTP client are very simple. It must match this interface:
 
