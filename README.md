@@ -21,13 +21,17 @@ import (
 	"log"
 	"net/http"
 	petstore "petstore/v2"
+	"petstore/v2/pkg/models/shared"
 )
 
 func main() {
 	s := petstore.New()
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -84,13 +88,17 @@ import (
 	"log"
 	petstore "petstore/v2"
 	"petstore/v2/pkg/models/sdkerrors"
+	"petstore/v2/pkg/models/shared"
 )
 
 func main() {
 	s := petstore.New()
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 
 		var e *sdkerrors.SDKError
@@ -127,6 +135,7 @@ import (
 	"log"
 	"net/http"
 	petstore "petstore/v2"
+	"petstore/v2/pkg/models/shared"
 )
 
 func main() {
@@ -135,7 +144,10 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -159,6 +171,7 @@ import (
 	"log"
 	"net/http"
 	petstore "petstore/v2"
+	"petstore/v2/pkg/models/shared"
 )
 
 func main() {
@@ -167,7 +180,10 @@ func main() {
 	)
 
 	ctx := context.Background()
-	res, err := s.Pets.CreatePets(ctx)
+	res, err := s.Pets.CreatePets(ctx, shared.Pet{
+		ID:   596804,
+		Name: "string",
+	})
 	if err != nil {
 		log.Fatal(err)
 	}
