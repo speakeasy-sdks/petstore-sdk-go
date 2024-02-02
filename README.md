@@ -20,8 +20,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	petstore "petstore/v2"
-	"petstore/v2/pkg/models/shared"
+	petstore "petstore/v3"
+	"petstore/v3/pkg/models/shared"
 )
 
 func main() {
@@ -86,9 +86,9 @@ import (
 	"context"
 	"errors"
 	"log"
-	petstore "petstore/v2"
-	"petstore/v2/pkg/models/sdkerrors"
-	"petstore/v2/pkg/models/shared"
+	petstore "petstore/v3"
+	"petstore/v3/pkg/models/sdkerrors"
+	"petstore/v3/pkg/models/shared"
 )
 
 func main() {
@@ -134,8 +134,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	petstore "petstore/v2"
-	"petstore/v2/pkg/models/shared"
+	petstore "petstore/v3"
+	"petstore/v3/pkg/models/shared"
 )
 
 func main() {
@@ -170,8 +170,8 @@ import (
 	"context"
 	"log"
 	"net/http"
-	petstore "petstore/v2"
-	"petstore/v2/pkg/models/shared"
+	petstore "petstore/v3"
+	"petstore/v3/pkg/models/shared"
 )
 
 func main() {

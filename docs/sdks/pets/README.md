@@ -17,9 +17,9 @@ Create a pet
 package main
 
 import(
-	petstore "petstore/v2"
+	petstore "petstore/v3"
 	"context"
-	"petstore/v2/pkg/models/shared"
+	"petstore/v3/pkg/models/shared"
 	"log"
 	"net/http"
 )
@@ -67,9 +67,9 @@ List all pets
 package main
 
 import(
-	petstore "petstore/v2"
+	petstore "petstore/v3"
 	"context"
-	"petstore/v2/pkg/models/operations"
+	"petstore/v3/pkg/models/operations"
 	"log"
 )
 
@@ -113,9 +113,9 @@ Info for a specific pet
 package main
 
 import(
-	petstore "petstore/v2"
+	petstore "petstore/v3"
 	"context"
-	"petstore/v2/pkg/models/operations"
+	"petstore/v3/pkg/models/operations"
 	"log"
 )
 

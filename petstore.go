@@ -5,7 +5,7 @@ package petstore
 import (
 	"fmt"
 	"net/http"
-	"petstore/v2/pkg/utils"
+	"petstore/v3/pkg/utils"
 	"time"
 )
 
@@ -115,9 +115,9 @@ func New(opts ...SDKOption) *Petstore {
 		sdkConfiguration: sdkConfiguration{
 			Language:          "go",
 			OpenAPIDocVersion: "1.0.0",
-			SDKVersion:        "2.1.3",
-			GenVersion:        "2.237.2",
-			UserAgent:         "speakeasy-sdk/go 2.1.3 2.237.2 1.0.0 petstore",
+			SDKVersion:        "3.0.0",
+			GenVersion:        "2.248.1",
+			UserAgent:         "speakeasy-sdk/go 3.0.0 2.248.1 1.0.0 petstore",
 		},
 	}
 	for _, opt := range opts {
