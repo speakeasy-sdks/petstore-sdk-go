@@ -19,7 +19,6 @@ package main
 import (
 	"context"
 	"log"
-	"net/http"
 	petstore "petstore/v3"
 	"petstore/v3/pkg/models/shared"
 )
@@ -35,8 +34,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if res.StatusCode == http.StatusOK {
+	if res != nil {
 		// handle response
 	}
 }
@@ -133,7 +131,6 @@ package main
 import (
 	"context"
 	"log"
-	"net/http"
 	petstore "petstore/v3"
 	"petstore/v3/pkg/models/shared"
 )
@@ -151,8 +148,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if res.StatusCode == http.StatusOK {
+	if res != nil {
 		// handle response
 	}
 }
@@ -169,7 +165,6 @@ package main
 import (
 	"context"
 	"log"
-	"net/http"
 	petstore "petstore/v3"
 	"petstore/v3/pkg/models/shared"
 )
@@ -187,8 +182,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
-	if res.StatusCode == http.StatusOK {
+	if res != nil {
 		// handle response
 	}
 }
